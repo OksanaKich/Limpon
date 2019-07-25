@@ -11,7 +11,7 @@ a {
 h1 {
     font-size: 60px;
     font-weight: 600;
-    letter-spacing: -2.5;
+    letter-spacing: 2.5px;
     color: #192b59;
     max-width: 540px;
     line-height: 1.1;
@@ -480,13 +480,12 @@ a .nav-item {
 .page-company {
     background-image: url(../img/sponsors-bg.png);
     background-repeat: no-repeat;
-    background-size: ;
     padding: 106px 0 99px 0 ;
 }
 
 .page-subscribe {
     padding: 25px 0 28px 0;
-    columns: #fff;
+    color: #fff;
     background: rgba(10,32,144,1);
     background: -moz-linear-gradient(45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
     background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(10,32,144,1)), color-stop(100%, rgba(35,120,205,1)));
@@ -504,7 +503,7 @@ a .nav-item {
     padding: 116px 0 96px 0;
 }
 .page-screen{
-    padding-top: 116px 0 0 0;
+    padding: 116px 0 0 0;
     text-align: center;
 }
 .page-screen, .page-plan {
