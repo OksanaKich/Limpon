@@ -112,6 +112,7 @@ a .nav-item {
     font-weight: 700;
     padding: 20px 40px;
     border-radius: 30px;
+    transition: .3s;
 }
 .btn-primary:hover{
     background-color: #fff;
@@ -127,6 +128,7 @@ a .nav-item {
     letter-spacing: 0.68px;
     padding: 20px 40px;
     border-radius: 30px;
+    transition: .3s;
 }
 .btn-secondary:hover{
     background-color: #fff;
@@ -149,6 +151,7 @@ a .nav-item {
     letter-spacing: 0.68px;
     padding: 20px 40px;
     border-radius: 30px;
+    transition: .3s;
 }
 .btn-info:hover {
     color: #fff;
@@ -195,6 +198,42 @@ a .nav-item {
     height: 70px;
     background-repeat: no-repeat;
 }
+.grid {
+    display: grid;
+    grid-template-areas: "a b c"
+                         "d b c"
+                         "d f g"
+                         "e f g"
+                         "e h h";
+    grid-gap: 35px;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.grid-title {
+    grid-area: a;
+}
+.grid-item-1 {
+    grid-area: b;
+}
+.grid-item-2 {
+    grid-area: c;
+}
+.grid-item-3 {
+    grid-area: d;
+}
+.grid-item-4 {
+    grid-area: e;
+}
+.grid-item-5 {
+    grid-area: f;
+}
+.grid-item-6 {
+    grid-area: g;
+}
+.grid-text {
+    grid-area: h;
+}
 .grid h2 {
     font-size: 40px;
     font-weight: 700;
@@ -205,15 +244,97 @@ a .nav-item {
     color: #1085e4;
     display: block;
 }
+.grid-item {
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 9px 20px #f4f4f4;
+    padding: 40px 29px 64px;
+}
 .grid-item h3 {
     font-size: 20px;
     font-weight: 600;
     color: #192b59;
+    margin-bottom: 18px;
 }
 .grid-item a {
     font-size: 14px;
     font-weight: 600;
     color: #1085e4;
+}
+.grid-icon {
+    background-repeat: no-repeat;
+    display: block;
+    width: 92px;
+    margin: 0 auto 20px;
+    background-position: center;
+    box-shadow: 0 0 5px #f4f4f4;
+}
+.grid-icon-1 {
+    background-image: url(../img/icon-doc.png);
+    width: 79px;
+    height: 82px;
+}
+.grid-icon-2 {
+    background-image: url(../img/icon-edit.png);
+    width: 103px;
+    height: 92px;
+}
+.grid-icon-3 {
+    background-image: url(../img/icon-mobile.png);
+    width: 73px;
+    height: 79px;
+}
+.grid-icon-4 {
+    background-image: url(../img/icon-edit.png);
+    width: 103px;
+    height: 92px;
+}
+.grid-icon-5 {
+    background-image: url(../img/icon-resp-des.png);
+    width: 103px;
+    height: 92px;
+}
+.grid-icon-6 {
+    background-image: url(../img/icon-24.png);
+    width: 103px;
+    height: 92px;
+}
+.page-software-flex {
+    display: flex;
+    justify-content: flex-end;
+}
+.page-software-flex>div {
+    flex-basis: 55%;
+}
+.page-software-icon {
+    background-image: url(../img/icon-forma.png);
+    display: block;
+    width: 110px;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-position: 18px 0;
+}
+.page-software .title-h2 {
+    max-width: 550px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+.page-software-list {
+    margin-top: 31px;
+    height: 323px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.page-software-list dt {
+    font-weight: 700;
+    color:#5a6789;
+    margin-bottom: 10px;
+}
+.page-software-list dd {
+    margin-left: 0;
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 1.8;
 }
 .list-stat {
     display: flex;
@@ -388,4 +509,10 @@ a .nav-item {
 }
 .page-screen, .page-plan {
     text-align: center;
+}
+.page-grid {
+    margin: 20px 0 20px 0;
+}
+.page-software {
+    padding: 110px 0 156px 0;
 }
