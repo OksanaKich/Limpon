@@ -59,6 +59,9 @@ h1 {
 .page-subscribe .title-h2 span {
     font-size: 14px;
 }
+.content-app .title-h2 {
+    margin-top: 50px;
+}
 .wrap {
     max-width: 1110px;
     margin: 0 auto;
@@ -299,6 +302,17 @@ a .nav-item {
     width: 103px;
     height: 92px;
 }
+.software-pic {
+   display: block;
+   width: 931px;
+   height: 760px;
+   background-image: url(../img/tablet.png);
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   position: absolute;
+   left: -20Px;
+   bottom: -39px;
+}
 .page-software-flex {
     display: flex;
     justify-content: flex-end;
@@ -306,15 +320,19 @@ a .nav-item {
 .page-software-flex>div {
     flex-basis: 55%;
 }
-.page-software-icon {
+.settings-icon{
     background-image: url(../img/icon-forma.png);
     display: block;
     width: 110px;
     height: 90px;
     background-repeat: no-repeat;
     background-position: 18px 0;
+    margin-left: -30px;
+} 
+.page-software .title-h2{
+    margin-left: 0;
 }
-.page-software .title-h2 {
+.page-software .title-h2, .page-analitics .title-h2 {
     max-width: 550px;
     margin-top: 12px;
     margin-bottom: 20px;
@@ -335,6 +353,58 @@ a .nav-item {
     margin-bottom: 50px;
     font-size: 14px;
     line-height: 1.8;
+}
+.page-app-text {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.5; 
+    color: #c4d2dd;
+    margin-top: 26px;
+    margin-bottom: 20px;
+}
+.page-app-list {
+    padding: 0;
+    list-style-type: none;
+    margin-left: 0;
+
+}
+.page-app-list>li {
+    display: inline-block;
+} 
+.page-app-list>li>a {
+    background-image: url(../img/google-play343x53.png);
+    display: block;
+    width: 162px;
+    height: 53px;
+}
+.page-app-list>li>a.page-app-android {
+    background-position: 0 0;
+ 
+}
+.page-app-list>li>a.page-app-ios {
+    background-position: 162px 0;
+}
+.content-app {
+    width: 55%;
+}
+a.video-app {
+    position: absolute;
+    top: -57px;
+    right: -150px;
+}
+
+.flex-analitics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-analitics>div {
+    flex-basis: 50%;
+}
+.page-analitics-text {
+    padding-bottom: 50px;
+
 }
 .list-stat {
     display: flex;
@@ -513,5 +583,20 @@ a .nav-item {
     margin: 20px 0 20px 0;
 }
 .page-software {
+    position: relative;
+    overflow: hidden;
     padding: 110px 0 156px 0;
+    background-image: url(../img/bg3.png);
+}
+.page-app {
+    padding: 69px 0 82px 0;
+}
+.page-app .wrap {
+    position: relative;
+}
+.page-analitics {
+    background-image: url(../img/bg-stat.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 117px 0 137px 0;
 }
