@@ -404,7 +404,14 @@ a.video-app {
 }
 .page-analitics-text {
     padding-bottom: 50px;
-
+}
+.flex-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.page-control-text {
+    padding-bottom: 50px;
 }
 .list-stat {
     display: flex;
@@ -539,6 +546,47 @@ a.video-app {
 .box-subscribe-user input:focus, .box-subscribe-user .btn-primar {
     outline: none;
 }
+.box-clients {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 63px; 
+}
+.box-clients-item {
+    background-color: #fff;
+    padding: 21px 42px;
+    border-radius: 10px;
+    flex-basis: 32%;
+    box-sizing: border-box;
+    font-size: 14px;
+    box-shadow: 0 9px 20px #f4f4f4;
+}
+.box-clients-item>p {
+    margin-bottom: 4px;
+}
+.box-clients-item .name {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000958;
+    margin-bottom: 0;
+    letter-spacing: -0.6px;
+    line-height: 1;
+}
+.box-clients-item .position {
+    color: #1085e4;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+    letter-spacing: 3px;
+}
+.box-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.box-info>div {
+    padding-left: 10px;
+}
 /*PAGE*/
 .page-header {
     background-image: url(../img/header-bg.png);
@@ -599,4 +647,25 @@ a.video-app {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 117px 0 137px 0;
+}
+.page-control {
+    background-image: url(../img/bg-control.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 117px 0 137px 0;
+}
+.page-clients {
+    background-image: url(../img/bg-clients.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 43px 0 0 0;
+    margin-top: 120px;
+}
+.page-clients .title-h2 {
+    color: #fff;
+}
+.page-clients .title-h2 span {
+    color: #85c8ff;
 }
