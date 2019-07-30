@@ -601,7 +601,7 @@ a.video-app {
     box-shadow: 0 5px 6px #f4f4f4;
     position: relative;
     padding: 193px 0 42px 0;
-    
+    box-sizing: border-box;    
 }
 .box-team-item .position {
     color: #1a88a1;
@@ -623,17 +623,77 @@ a.video-app {
    right: 0;
    margin: 0 auto;
 }
-.box-team-item .btn-more {
-    display: block;
-    margin: 0 auto;
+.box-team-item .btn-team {
+    background-color: #f3f3f3;
+    border-radius: 100%;
+    display: flex;
     width: 50px;
     height: 50px;
-    background-image: url(../img/btn-more.png);
-    background-repeat: no-repeat;
+    margin: 0 auto;
     border: none;
+    transition: 0.3s;
+}
+.box-team-item .btn-team:hover {
+    background-color: #1a88e1;
+}
+.box-team-item .btn-team span {
+    background-image: url(../img/social-media-all.png);
+    background-repeat: no-repeat; 
+    display: block;
+    margin: 0 auto;
+    align-self: center;
+}
+.box-team-item .btn-more span {
+    background-position: -2px -2px;
+    width: 20px;
+    height: 20px; 
+}
+.box-team-item .btn-more:hover span {
+    background-position: -1px -41px;
 }
 .box-team-item .btn-more:focus {
     outline: none;
+}
+.social-team {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+.box-team-item .btn-fb span {
+    background-position: -26px 4px;;
+    width: 32px;
+    height: 32px; 
+}
+.box-team-item .btn-fb:hover span {
+    background-position: -26px -34px;
+    width: 32px;
+    height: 32px;
+}
+.box-team-item .btn-tw span {
+    background-position: -55px 4px;
+    width: 32px;
+    height: 32px; 
+}
+.box-team-item .btn-tw:hover span {
+    background-position: -55px -34px;
+}
+.box-team-item .btn-be span {
+    background-position: -96px 4px;
+    width: 32px;
+    height: 32px; 
+}
+.box-team-item .btn-be:hover span {
+    background-position: -96px -33px;;
+}
+.box-team-item .btn-web span {
+    background-position:-128px 4px;
+    width: 32px;
+    height: 32px; 
+}
+.box-team-item .btn-web:hover span {
+    background-position: -129px  -33px;
 }
 /*PAGE*/
 .page-header {
