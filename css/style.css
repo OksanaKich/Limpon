@@ -695,6 +695,100 @@ a.video-app {
 .box-team-item .btn-web:hover span {
     background-position: -129px  -33px;
 }
+/*.intro {
+    color: (rgba(0,0, 0, 0.04);
+    font-size: 300px;
+    font-weight: 900;
+    line-height: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40px;
+    text-align: center;
+    margin: 0;
+}*/
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 51px;
+}
+.contact-form input, .contact-form textarea {
+    font-size: 14px;
+    border: 2px solid #dce4ec;
+    padding: 26px 80px 26px 37px;
+    border-radius: 35px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+}
+.contact-form textarea {
+    height: 161px;
+    resize: none;
+}
+.contact-form .btn-primary {
+    position: relative;
+    padding: 22px 40px 22px 65px; 
+    max-width: 232px;
+    letter-spacing: 2px;
+}
+.contact-form .btn-primary::before {
+    content: '';
+    background-image: url(../img/pointer.png);
+    position: absolute;
+    left: 54px;
+    top: 22px;
+    display: block;
+    width: 13px;
+    height: 13px;
+}
+.contact-form-item {
+    margin-bottom: 19px;
+    position: relative;
+}
+.contact-form-text {
+    margin-bottom: 32px;
+}
+.contact-form-item::after {
+    content: '';
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    right: 42px;
+} 
+.contact-form-name::after {
+    background-image: url(../img/user.png);
+    width: 20px;
+    height: 17px;
+    top: 26px;
+}
+.contact-form-mail::after {
+    background-image: url(../img/envelope.png);
+    width: 20px;
+    height: 15px;
+    top: 26px;
+}
+.contact-form-text::after {
+    background-image: url(../img/pen.png);
+    width: 20px;
+    height: 15px;
+    top: 26px;
+  
+}
+.flex-form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.flex-form>div {
+    flex-basis: 47%;
+}
+.flex-form img {
+    margin-right: 60px;
+}
 /*PAGE*/
 .page-header {
     background-image: url(../img/header-bg.png);
@@ -702,6 +796,7 @@ a.video-app {
     background-size: cover;
     padding: 53px 0 330px 0;
     position: relative;
+ 
 }
 .page-company {
     background-image: url(../img/sponsors-bg.png);
@@ -786,5 +881,12 @@ a.video-app {
     background-image: url(../img/bg-team.png);
     background-position: center;
     background-repeat: no-repeat;
-    padding: 82px 0 82px 0;
+    padding: 82px 0 121px 0;
+}
+.page-form {
+    background-image: url(../img/bg-freetrial.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 0 120px 0;
 }
