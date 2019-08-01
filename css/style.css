@@ -65,6 +65,8 @@ h1 {
 .wrap {
     max-width: 1100px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .box-header {
     display: flex;
@@ -171,33 +173,49 @@ a .nav-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     max-width: 1110px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-.list-company-item {
+
+.list-company-item span {
     display: block; 
 }
 .company1 {
-    background-image: url(../img/company1.png);
     flex-basis: 198px;
-    height: 70px;
-    background-repeat: no-repeat;
 }
 .company2 {
-    background-image: url(../img/company2.png);
     flex-basis: 200px;
-    height: 70px;
-    background-repeat: no-repeat;
 }
 .company3 {
-    background-image: url(../img/company3.png);
     flex-basis: 200px;
+}
+.company4 {
+    flex-basis: 200px;
+}
+.company1 span {
+    background-image: url(../img/company1.png);
+    width: 198px;
     height: 70px;
     background-repeat: no-repeat;
 }
-.company4 {
+.company2 span {
+    background-image: url(../img/company2.png);
+    width: 200px;
+    height: 70px;
+    background-repeat: no-repeat;
+}
+.company3 span {
+    background-image: url(../img/company3.png);
+    width: 200px;
+    height: 70px;
+    background-repeat: no-repeat;
+}
+.company4 span{
     background-image: url(../img/company4.png);
-    flex-basis: 200px;
+    width: 200px;
     height: 70px;
     background-repeat: no-repeat;
 }
@@ -212,6 +230,8 @@ a .nav-item {
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 1110px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .grid-title {
     grid-area: a;
@@ -438,6 +458,8 @@ a.video-app {
 .screen {
     margin-top: 70px;
     margin-bottom: -7px;
+    width: 100%;
+    max-width: 1280px;
 }
 .box-price {
     display: flex;
@@ -515,6 +537,7 @@ a.video-app {
     display: flex;
     justify-content: space-between;
     align-items: center;  
+    flex-wrap: wrap;
 }
 .box-subscribe-text{
     font-size: 18px;
@@ -524,7 +547,7 @@ a.video-app {
 .box-subscribe-user {
     position: relative;
 }
-.box-subscrib-child {
+.box-subscribe-child {
     flex-basis: 49%; 
 }
 .box-subscribe-user input {
@@ -925,4 +948,57 @@ socail-link svg,
 .footer {
     background-color: #192b59;
     padding: 5px 0 4px 0;
+}
+
+/*MEDIA*/
+
+@media (max-width: 1200px) {
+    .screen-img { 
+        max-width: 500px;
+    }
+}
+@media (max-width: 1050px) {
+    .page-header {
+
+    }
+    .screen-img { 
+
+    }
+    .list-company-item {
+        flex-basis: 50%;
+    }
+    .list-company-item span {
+        margin: 0 auto;
+    }
+    page-company {
+        padding: 50px 0 20px;
+    }
+    .grid {
+        grid-template-areas: 
+        "a a"  "b c" "d e" "f g" "h h";
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid h2 {
+        text-align: center;
+    }
+    .grid h2 span {
+        margin-bottom: 10px;
+    }
+    .box-subscribe {
+        flex-direction: column-reverse;
+    }
+    .box-subscribe-child {
+        flex-basis: 100%;
+        text-align: center; 
+    }
+    .box-subscribe-text {
+        margin: 0 auto 30px;
+    }
+    .box-subscribe img {
+        margin: 0 auto 50px; 
+        max-width: 170px;  
+    }
+    .page-subscribe {
+        padding: 50px 0 65px 0;
+    }
 }
