@@ -789,6 +789,38 @@ a.video-app {
 .flex-form img {
     margin-right: 60px;
 }
+
+.footer-flex>p>a {
+    color: #1085e4;
+    text-transform: uppercase;
+}
+.social {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.social>li {
+    margin-left: 23px;
+}
+.social-facebook svg {
+    width: 16px;
+}
+.social-twitter svg {
+    width: 16px; 
+}
+.social-behance svg {
+    width: 17px;
+}
+.social-pinterest svg {
+    width: 17px;
+}
+.social-foursquare svg {
+    width: 17px;
+}
+socail-link svg,
+.social-twitter svg path {
+    fill: #1085e4;
+}
 /*PAGE*/
 .page-header {
     background-image: url(../img/header-bg.png);
@@ -889,4 +921,8 @@ a.video-app {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 70px 0 120px 0;
+}
+.footer {
+    background-color: #192b59;
+    padding: 5px 0 4px 0;
 }
