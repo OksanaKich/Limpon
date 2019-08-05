@@ -27,6 +27,7 @@
         <div class="wrap box-header">
             <a href="" class="logo"></a>
             <ul class="nav">
+                <li><a href="" class="nav-item"></a>Home</li>
                 <li><a href="" class="nav-item"></a>Features</li>
                 <li><a href="" class="nav-item"></a>Video</li>
                 <li><a href="" class="nav-item"></a>Screens</li>
@@ -348,6 +349,18 @@
             </ul>
         </div>
     </div>
+    <div class="modal">
+        <button class="btn-close" type="button"><span>&times;</span></button>
+        <ul class="nav-modal">
+            <li><a href="" class="nav-item"></a>Home</li>
+            <li><a href="" class="nav-item"></a>Features</li>
+            <li><a href="" class="nav-item"></a>Video</li>
+            <li><a href="" class="nav-item"></a>Screens</li>
+            <li><a href="" class="nav-item"></a>Pricing</li>
+            <li><a href="" class="nav-item"></a>Team</li>
+            <li><a href="" class="btn-primary btn-free">Free trial</a></li>
+        </ul>
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){
@@ -363,6 +376,12 @@
             $(".btn-thomas").hide();
             $(".social-thomas").fadeIn();
           });
+          $(".btn-menu").click(function(){
+            $(".modal").show()
+          })
+            $(".btn-close").click(function(){
+            $(".modal").hide()
+          })
         });
     </script>
 </body>
