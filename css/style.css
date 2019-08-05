@@ -40,7 +40,6 @@ h1 {
 }
 .page-stat .title-h2 {
     max-width: 580px;
-
 }
 .page-screen .title-h2 {
     font-size: 40px;
@@ -94,6 +93,9 @@ h1 {
     letter-spacing: 2px; 
     color: #6e7ea9;
 }
+.nav>li:last-child {
+    padding-right: 0;
+}
 a .nav-item {
     color: #6e7ea9;
     letter-spacing: 2px; 
@@ -102,11 +104,24 @@ a .nav-item {
     display: block;
     background-image: url(../img/header-screen.png);
     background-repeat: no-repeat;
-    width: 895px;
-    height: 740px;
+    width: 700px;
+    height: 587px;
     position: absolute;
     right: 0;
     top: 189px;
+}
+.btn-menu {
+    border: none;
+    background-color: transparent;
+    display: none;
+}
+.btn-menu:focus {
+    outline: none;
+}
+.btn-menu svg {
+    width: 35px;
+    height: 35px;
+    fill: #192b59;   
 }
 .btn-primary{
     background-color: #1085e4;
@@ -324,8 +339,8 @@ a .nav-item {
 }
 .software-pic {
    display: block;
-   width: 931px;
-   height: 760px;
+   width: 700px;
+   height: 571px;
    background-image: url(../img/tablet.png);
    background-size: 100% 100%;
    background-repeat: no-repeat;
@@ -336,9 +351,10 @@ a .nav-item {
 .page-software-flex {
     display: flex;
     justify-content: flex-end;
+    margin-right: 5px;
 }
 .page-software-flex>div {
-    flex-basis: 55%;
+    flex-basis: 40%;
 }
 .settings-icon{
     background-image: url(../img/icon-forma.png);
@@ -893,9 +909,12 @@ socail-link svg,
     overflow: hidden;
     padding: 110px 0 156px 0;
     background-image: url(../img/bg3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .page-app {
     padding: 69px 0 82px 0;
+    width: 1110px;
 }
 .page-app .wrap {
     position: relative;
@@ -949,12 +968,24 @@ socail-link svg,
     background-color: #192b59;
     padding: 5px 0 4px 0;
 }
-
+.social-facebook  {
+    display: block;
+    width: 10px;
+    height: 10px;
+}
 /*MEDIA*/
 
 @media (max-width: 1200px) {
     .screen-img { 
         max-width: 500px;
+    }
+}
+@media (max-width: 1090px){
+    .nav {
+        display: none;
+    }
+    .btn-menu {
+        display: block;
     }
 }
 @media (max-width: 1050px) {
