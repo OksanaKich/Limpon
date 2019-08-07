@@ -139,6 +139,7 @@ a .nav-item {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 700;
+    letter-spacing: 0.68px;
     padding: 20px 40px;
     border-radius: 30px;
     transition: .3s;
@@ -502,6 +503,7 @@ a.video-app {
     list-style-type: none;
     justify-content: space-around;
     margin-top: 76px;
+    flex-wrap: wrap;
 }
 .list-stat>li {
     font-size: 12px;
@@ -527,6 +529,7 @@ a.video-app {
 }
 .box-price {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 80px;
 }
@@ -869,6 +872,8 @@ a.video-app {
     align-items: center;
     max-width: 1110px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .flex-form>div {
     flex-basis: 47%;
@@ -962,7 +967,7 @@ socail-link svg,
 }
 .page-app {
     padding: 69px 0 82px 0;
-    width: 1110px;
+    max-width: 1100px;
 }
 .page-app .wrap {
     position: relative;
@@ -1019,12 +1024,22 @@ socail-link svg,
 
 /*MEDIA*/
 
-
 @media (max-width: 1200px) {
-    .video-app {
-        top: -23px;
-        right: 0;
+    .software-pic {
+        display: none;  
+    } 
+    .page-software-flex>div {
+        flex-basis: 100%;
+        justify-content: scenter;
+        background-color: #fff;
+        padding: 0 30px 0 30px;
+        margin-top: 0;
     }
+    .page-software {
+        padding: 30px 0 30px 0;
+    }
+}
+@media (max-width: 1200px) {
     .video-app img {
         width: 482px;
     }
@@ -1064,9 +1079,6 @@ socail-link svg,
     .page-header {
         padding: 53px 0 130px 0;
     }
-}
-@media (max-width: 1050px) {
-   
     .list-company-item {
         flex-basis: 50%;
     }
@@ -1104,6 +1116,51 @@ socail-link svg,
     .page-subscribe {
         padding: 50px 0 65px 0;
     }
+    .content-app {
+        width: 100%;
+        text-align: center;
+    }
+    .page-app {
+        padding: 350px 30px 10px 30px;
+       
+    }
+    a.video-app {
+        top: -350px;
+        margin: 0 auto;
+        left: 0;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+    .video-app img {
+        width: 337px;
+    }
+    .page-analitics {
+        padding-top: 30px 10px 30px 10px;
+    }
+}
+@media (max-width: 930px) {
+    .box-price-item {
+        flex-basis: 100%;
+        max-width: 500px;
+        margin-bottom: 20px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 700px) {
+    .page-stat {
+        padding: 30px 10px 20px 10px;
+    }
+    
+    .list-stat {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-left: 0;  
+    }
+    .list-stat>li {
+        flex-basis: 34%;
+        margin-bottom: 20px;
+    }
 }
 @media (max-width: 600px) {
     h1 {
@@ -1114,11 +1171,10 @@ socail-link svg,
         margin-bottom: 10px;
     }
     .btn-group {
-        margin: 0 auto;
         max-width: 300px;
         flex-direction: column;
         text-align: center;
         justify-content: center;
+        margin: 0 auto;
     }
-    
 }
