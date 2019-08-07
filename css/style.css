@@ -358,18 +358,19 @@ ul.nav-modal>li:last-child {
 }
 .grid-icon-1 {
     background-image: url(../img/icon-doc.png);
-    width: 79px;
-    height: 82px;
+    width: 90px;
+    height: 92px;
 }
 .grid-icon-2 {
-    background-image: url(../img/icon-edit.png);
-    width: 103px;
+    background-image: url(../img/icon-custom.png);
+    width: 90px;
     height: 92px;
 }
 .grid-icon-3 {
     background-image: url(../img/icon-mobile.png);
-    width: 73px;
-    height: 79px;
+    width: 103px;
+    height: 92px;
+}
 }
 .grid-icon-4 {
     background-image: url(../img/icon-edit.png);
@@ -606,6 +607,10 @@ a.video-app {
     align-items: center;  
     flex-wrap: wrap;
 }
+.box-subscribe img {
+    border-radius: 10px;
+    box-shadow: 0 0 2px 3px #4566a3;
+}
 .box-subscribe-text{
     font-size: 18px;
     max-width: 497px;
@@ -641,6 +646,7 @@ a.video-app {
 .box-clients {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 63px; 
     margin-bottom: 60px;
 }
@@ -881,13 +887,17 @@ a.video-app {
 .flex-form img {
     margin-right: 60px;
 }
-
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+}
 .footer-flex>p>a {
     color: #1085e4;
     text-transform: uppercase;
 }
 .social {
     display: flex;
+    
     align-items: center;
     list-style-type: none;
 }
@@ -897,22 +907,59 @@ a.video-app {
 .social-facebook svg {
     width: 16px;
 }
+.socail-link svg,
+.social-facebook svg path {
+    fill:#fff;
+}
+.social-link:hover svg, 
+.social-facebook:hover svg path {
+    fill: #1085e4;
+}
 .social-twitter svg {
     width: 16px; 
+}
+.socail-link svg,
+.social-twitter svg path {
+    fill:#fff;
+}
+.social-link:hover svg, 
+.social-twitter:hover svg path {
+    fill: #1085e4;
 }
 .social-behance svg {
     width: 17px;
 }
+.socail-link svg,
+.social-behance svg path {
+    fill:#fff;
+}
+.social-link:hover svg, 
+.social-behance:hover svg path {
+    fill: #1085e4;
+}
 .social-pinterest svg {
     width: 17px;
+}
+.socail-link svg,
+.social-pinterest svg path {
+    fill:#fff;
+}
+.social-link:hover svg, 
+.social-pinterest:hover svg path {
+    fill: #1085e4;
 }
 .social-foursquare svg {
     width: 17px;
 }
-socail-link svg,
-.social-twitter svg path {
+.socail-link svg,
+.social-foursquare svg path {
+    fill:#fff;
+}
+.social-link:hover svg, 
+.social-foursquare:hover svg path {
     fill: #1085e4;
 }
+
 /*PAGE*/
 .page-header {
     background-image: url(../img/header-bg.png);
